@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="393.0" prefWidth="669.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfficherListeClient_Controller">
+   <children>
+      <TableView fx:id="tableView" layoutX="19.0" layoutY="58.0" prefHeight="323.0" prefWidth="630.0">
+        <columns>
+          <TableColumn fx:id="cin" prefWidth="110.0" text="CIN" />
+          <TableColumn fx:id="nom" prefWidth="119.0" text="Nom &amp; Prenom " />
+            <TableColumn fx:id="adres" prefWidth="245.0" text="Adresse" />
+            <TableColumn fx:id="gsm" prefWidth="157.0" text="Nr GSM" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="200.0" layoutY="12.0" prefHeight="28.0" prefWidth="268.0" text="La liste des clients:" textFill="BLUE">
+         <font>
+            <Font name="Segoe Print" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

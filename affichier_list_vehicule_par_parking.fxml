@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="413.0" prefWidth="904.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AffichierListVehiculeParParking_Controller">
+   <children>
+      <TableView fx:id="tableV" layoutX="26.0" layoutY="85.0" prefHeight="303.0" prefWidth="852.0">
+        <columns>
+          <TableColumn fx:id="n_matr" prefWidth="108.0" text="N_matricule" />
+          <TableColumn fx:id="marq" prefWidth="119.0" text="Marque" />
+            <TableColumn fx:id="t" prefWidth="110.0" text="Type" />
+            <TableColumn fx:id="carb" prefWidth="115.0" text="Carburant" />
+            <TableColumn fx:id="date" prefWidth="166.0" text="Date_mise_en_circulation" />
+            <TableColumn fx:id="comptr" prefWidth="99.0" text="Compteur_km" />
+            <TableColumn fx:id="cmt" prefWidth="134.0" text="Commentaire" />
+        </columns>
+      </TableView>
+      <Button fx:id="afficher" layoutX="473.0" layoutY="32.0" mnemonicParsing="false" onAction="#afficher_list_vehiculeP_P" prefHeight="25.0" prefWidth="197.0" style="-fx-background-color: blue;" text="Afficher" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="lb" alignment="CENTER" layoutX="250.0" layoutY="32.0" prefHeight="30.0" prefWidth="208.0" promptText="Saisi le numero de parking">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="11.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

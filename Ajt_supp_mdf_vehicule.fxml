@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="364.0" prefWidth="890.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Ajt_supp_mdf_vehicule_Controller">
+   <children>
+      <MenuBar layoutX="46.0" layoutY="2.0" prefHeight="25.0" prefWidth="593.0" style="-fx-background-color: white;">
+        <menus>
+          <Menu mnemonicParsing="false" text="Utilisateur">
+            <items>
+              <MenuItem fx:id="Ajt_Utls" mnemonicParsing="false" onAction="#ajouter_utilisateur" text="Ajouter un utilisateur" />
+                  <MenuItem fx:id="Supp_Utls" mnemonicParsing="false" onAction="#supprimer_utilisateur" text="Supprimer un utilisateur" />
+                  <MenuItem fx:id="Sus_Utls" mnemonicParsing="false" onAction="#suspendre_utilisateur" text="Suspendre un utilisateur" />
+                  <MenuItem mnemonicParsing="false" text="Modifier un utilisateur" />
+                  <MenuItem fx:id="Afch_list_utilisateurs" mnemonicParsing="false" onAction="#afficher_list_utilisateur" text="Afficher la liste des utilisateurs" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Client">
+            <items>
+              <MenuItem fx:id="Ajt_Clt" mnemonicParsing="false" onAction="#ajouter_client" text="Ajouter un client" />
+                  <MenuItem fx:id="Modf_Clts" mnemonicParsing="false" onAction="#modifier_client" text="Modifier un client" />
+                  <MenuItem fx:id="Supp_Ctls" mnemonicParsing="false" onAction="#supprimer_client" text="Supprimer un client" />
+                  <MenuItem fx:id="Afch_listClt" mnemonicParsing="false" onAction="#afficher_liste_client" text="Afficher la liste des clients" />
+                  <MenuItem fx:id="Rch_clt" mnemonicParsing="false" text="Rechercher un client" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Réservation">
+            <items>
+              <MenuItem fx:id="Ajt_Resv" mnemonicParsing="false" onAction="#ajouter_reservation" text="Ajouter une réservation" />
+                  <MenuItem fx:id="Supp_Resv" mnemonicParsing="false" onAction="#supprimer_reservation" text="Supprimer une réservation" />
+                  <MenuItem fx:id="Modf_Resv" mnemonicParsing="false" onAction="#modifier_reservation" text="Modifier une réservation" />
+                  <Menu mnemonicParsing="false" text="Afficher la liste...">
+                    <items>
+                      <MenuItem fx:id="Afch_listResv_V" mnemonicParsing="false" onAction="#affich_list_reservation_v" text="Réservations validées" />
+                        <MenuItem fx:id="Afch_listResv_NV" mnemonicParsing="false" onAction="#affich_list_reservation_nv" text="Réservations non validées" />
+                        <MenuItem fx:id="Afch_listResv_AN" mnemonicParsing="false" onAction="#affich_list_reservation_an" text="Réservations annulées" />
+                    </items>
+                  </Menu>
+                  <MenuItem fx:id="Rch_Resv" mnemonicParsing="false" onAction="#chercher_reservation" text="Chercher une réservation" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Contrat">
+              <items>
+                <MenuItem fx:id="Ajt_Ctra" mnemonicParsing="false" onAction="#ajouter_contrat" text="Ajouter une contrat" />
+                  <MenuItem fx:id="Modf_Ctra" mnemonicParsing="false" onAction="#modifier_contrat" text="Modifier une contrat" />
+                  <MenuItem fx:id="Supp_Ctra" mnemonicParsing="false" onAction="#supprimer_contrat" text="Supprimer une contrat" />
+                  <MenuItem fx:id="Rch_ctra" mnemonicParsing="false" onAction="#chercher_contrat" text="Chercher une contrat" />
+                  <MenuItem fx:id="Afch_listCtra" mnemonicParsing="false" onAction="#affich_list_contrat" text="Afficher la liste des contrats" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Facture">
+              <items>
+                <MenuItem fx:id="Ajt_Factr" mnemonicParsing="false" onAction="#ajouter_facture" text="Ajouter une facture" />
+                  <MenuItem fx:id="Modf_Factr" mnemonicParsing="false" onAction="#modifier_facture" text="Modifier  une facture" />
+                  <MenuItem fx:id="Supp_Factr" mnemonicParsing="false" onAction="#supprimer_facture" text="Supprimer une facture" />
+                  <MenuItem fx:id="Afch_listFactr" mnemonicParsing="false" onAction="#affich_list_facture" text="Afficher la liste des factures" />
+                  <MenuItem fx:id="Rch_Factr" mnemonicParsing="false" onAction="#chercher_facture" text="Chercher une facture" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Véhicule">
+              <items>
+                <MenuItem fx:id="Ajt_Vhcl" mnemonicParsing="false" onAction="#ajouter_vehicule" text="Ajouter un véhicule" />
+                  <MenuItem fx:id="Modf_Vhcl" mnemonicParsing="false" onAction="#modifier_vehicule" text="Modifier un véhicule" />
+                  <MenuItem fx:id="Supp_Vhcl" mnemonicParsing="false" onAction="#supprimer_vehicule" text="Supprimer un véhicule" />
+                  <MenuItem fx:id="Afch_listVhcl" mnemonicParsing="false" onAction="#affich_list_vehicule" text="Afficher la liste des véhicules" />
+                  <MenuItem fx:id="Rch_Vhcl" mnemonicParsing="false" onAction="#chercher_vehicule" text="Chercher un véhicule" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Parking">
+              <items>
+                <MenuItem fx:id="Ajt_Prk" mnemonicParsing="false" onAction="#ajouter_parking" text="Ajouter un parking" />
+                  <MenuItem fx:id="Modf_Prk" mnemonicParsing="false" onAction="#modifier_parking" text="Modifier un parking" />
+                  <MenuItem fx:id="Supp_PrK" mnemonicParsing="false" onAction="#supprimer_parking" text="Supprimer un parking" />
+                  <MenuItem fx:id="Afch_listVhcl_Prk" mnemonicParsing="false" onAction="#affich_list_vehicule_parking" text="Afficher la liste des véhicules d'un parking" />
+                  <MenuItem fx:id="Rch_Prk" mnemonicParsing="false" onAction="#chercher_parking" text="Chercher un parking" />
+                  <Menu mnemonicParsing="false" text="Véhicule...">
+                    <items>
+                      <MenuItem fx:id="Afch_listVhcl_Restituer" mnemonicParsing="false" onAction="#restituer_vehicule" text="Restituer un véhicule" />
+                        <MenuItem fx:id="Afch_listVhcl_Deposer" mnemonicParsing="false" onAction="#deposer_vehicule" text="Déposer un véhicule" />
+                        <MenuItem fx:id="FaireSortir_Vhcl" mnemonicParsing="false" onAction="#fair_sortir_vehicule" text="Faire sortir un véhicule" />
+                    </items>
+                  </Menu>
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Sanctions">
+              <items>
+                <MenuItem fx:id="Rgl_Sanction" mnemonicParsing="false" onAction="#regler_sanctions" text="Régler les sanctions des clients" />
+                  <MenuItem fx:id="Afch_list_clt_Sanction" mnemonicParsing="false" onAction="#affich_list_client_sonctiones" text="Afficher la liste des clients sanctionés" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Principale">
+              <items>
+                <MenuItem fx:id="Dashboard" mnemonicParsing="false" onAction="#dashboard" text="Dashboard" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-menu-48.png" />
+         </image>
+      </ImageView>
+      <Line endX="510.0" layoutX="115.0" layoutY="35.0" startX="-100.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="669.0" layoutY="10.0" prefHeight="31.0" prefWidth="188.0" style="-fx-background-color: red;" text="Véhicule" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="14.0" />
+         </font></Label>
+      <ImageView fitHeight="260.0" fitWidth="407.0" layoutX="398.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/vehicule.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="n_matricule" layoutX="84.0" layoutY="61.0" prefHeight="25.0" prefWidth="228.0" promptText="N_ matricule">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="marque" layoutX="82.0" layoutY="92.0" prefHeight="30.0" prefWidth="228.0" promptText="Marque">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="type" layoutX="79.0" layoutY="132.0" prefHeight="30.0" prefWidth="90.0" promptText="Type">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="carburant" layoutX="79.0" layoutY="172.0" prefHeight="29.0" prefWidth="90.0" promptText="Carburant">
+         <font>
+            <Font name="Segoe Print" size="11.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="compteur_km" layoutX="80.0" layoutY="208.0" prefHeight="25.0" prefWidth="228.0" promptText="Compteur_km(Ajoue&amp;modif)">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="date_mise_encirculation" disable="true" layoutX="80.0" layoutY="244.0" prefHeight="25.0" prefWidth="228.0" promptText="Date de mise en circulation">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="ajouter" layoutX="192.0" layoutY="281.0" mnemonicParsing="false" onAction="#ajt_vehicule" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Ajouter" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print" size="11.0" />
+         </font></Button>
+      <Button fx:id="modifier" layoutX="192.0" layoutY="312.0" mnemonicParsing="false" onAction="#modf_vehicule" prefHeight="25.0" prefWidth="116.0" style="-fx-background-color: blue;" text="Modifier" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print" size="11.0" />
+         </font></Button>
+      <Button fx:id="chercher" layoutX="80.0" layoutY="312.0" mnemonicParsing="false" onAction="#chr_vehicule" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: blue;" text="Chercher" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print" size="11.0" />
+         </font></Button>
+      <Button fx:id="supprimer" layoutX="80.0" layoutY="281.0" mnemonicParsing="false" onAction="#sup_vehicule" prefHeight="25.0" prefWidth="107.0" style="-fx-background-color: blue;" text="Supprimer" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print" size="11.0" />
+         </font>
+      </Button>
+      <Button fx:id="move" layoutX="805.0" layoutY="327.0" mnemonicParsing="false" onAction="#move" style="-fx-background-color: blue;" text="Move&gt;&gt;" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="comfir_label" alignment="CENTER" contentDisplay="CENTER" layoutX="486.0" layoutY="333.0" prefHeight="24.0" prefWidth="305.0">
+         <font>
+            <Font name="Segoe Print" size="13.0" />
+         </font></Label>
+      <TextField fx:id="commentaire" disable="true" layoutX="176.0" layoutY="132.0" prefHeight="30.0" prefWidth="134.0" promptText="réservé/non réserv">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="n_parking" disable="true" layoutX="176.0" layoutY="172.0" prefHeight="29.0" prefWidth="134.0" promptText="n_parking:">
+         <font>
+            <Font name="Perpetua Titling MT Bold" size="12.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

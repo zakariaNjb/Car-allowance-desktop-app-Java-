@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="241.0" prefWidth="268.0" style="-fx-background-color: snow;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ReglerSanction_Controller">
+   <children>
+      <Label layoutX="53.0" layoutY="23.0" text=" Régler les sanctions: " textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="15.0" />
+         </font>
+      </Label>
+      <TextField layoutX="37.0" layoutY="82.0" prefHeight="25.0" prefWidth="196.0" promptText="Nr réservation=Nr matricule">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <Button layoutX="38.0" layoutY="121.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="196.0" style="-fx-background-color: blue;" text="Régler" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="42.0" layoutY="164.0" prefHeight="17.0" prefWidth="196.0" text=" Chaque jour de retard est sanctionné " textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="188.0" prefHeight="17.0" prefWidth="163.0" text="par une amende de 2000 DH. " textFill="RED" />
+   </children>
+</AnchorPane>

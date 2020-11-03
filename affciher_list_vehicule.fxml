@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="409.0" prefWidth="1089.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.affciher_list_vehicule_Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="306.0" layoutY="14.0" prefHeight="17.0" prefWidth="404.0" text="La liste des véhicules de votre agence:" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="16.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableV" layoutX="31.0" layoutY="63.0" prefHeight="321.0" prefWidth="1024.0">
+        <columns>
+          <TableColumn fx:id="n_matr" prefWidth="129.0" text="N_matricule" />
+          <TableColumn fx:id="marq" prefWidth="136.0" text="Marque" />
+            <TableColumn fx:id="t" minWidth="0.0" prefWidth="98.0" text="Type" />
+            <TableColumn fx:id="carb" minWidth="0.0" prefWidth="91.0" text="Carburant" />
+            <TableColumn fx:id="comptr" prefWidth="154.0" text="Compteur_km" />
+            <TableColumn fx:id="date" prefWidth="182.0" text="Date de mise en circulation" />
+            <TableColumn fx:id="npark" prefWidth="112.0" text="N_parking" />
+            <TableColumn fx:id="cmt" prefWidth="121.0" text="Commentaire" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

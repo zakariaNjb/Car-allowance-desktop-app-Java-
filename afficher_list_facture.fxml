@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="667.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfficherListFacture_Controller">
+   <children>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="77.0" prefHeight="311.0" prefWidth="629.0">
+        <columns>
+          <TableColumn fx:id="nmtrcl" prefWidth="140.0" text="Nr facture" />
+          <TableColumn fx:id="cn" prefWidth="106.0" text="CIN de client" />
+            <TableColumn fx:id="mp" prefWidth="106.0" text="Montant" />
+            <TableColumn fx:id="date_f" prefWidth="152.0" text="Date de facture" />
+            <TableColumn fx:id="cmt" prefWidth="124.0" text="Commentaire" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="194.0" layoutY="24.0" prefHeight="17.0" prefWidth="282.0" text="La liste des facture:" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

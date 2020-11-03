@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="364.0" prefWidth="947.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfficherListReservVNVA_Controller">
+   <children>
+      <TableView fx:id="tableV" layoutX="19.0" layoutY="62.0" prefHeight="286.0" prefWidth="910.0">
+        <columns>
+          <TableColumn fx:id="n_matr" prefWidth="135.0" text="Nr réservation" />
+          <TableColumn fx:id="cn" prefWidth="129.0" text="Client: CIN" />
+            <TableColumn fx:id="datep" prefWidth="157.0" text="Date de départ" />
+            <TableColumn fx:id="dater" prefWidth="151.0" text="Date de retour" />
+            <TableColumn fx:id="cmt" prefWidth="174.0" text="Commentaire" />
+            <TableColumn fx:id="date_rsv" prefWidth="163.0" text="Date de réservation" />
+        </columns>
+      </TableView>
+      <Button fx:id="afficher" layoutX="482.0" layoutY="14.0" mnemonicParsing="false" onAction="#afficher" prefHeight="25.0" prefWidth="205.0" style="-fx-background-color: blue;" text="Afficher" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="cmbox" layoutX="251.0" layoutY="14.0" prefHeight="30.0" prefWidth="215.0" promptText="Toutes les réservations" />
+   </children>
+</AnchorPane>

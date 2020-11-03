@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="385.0" prefWidth="428.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Mdf_cmpteAdmistrateur_Controller">
+   <children>
+      <TextField fx:id="full_name" layoutX="111.0" layoutY="115.0" prefHeight="30.0" prefWidth="232.0" promptText="Nom &amp; Prénom">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="new_password" layoutX="111.0" layoutY="163.0" prefHeight="30.0" prefWidth="232.0" promptText="Nouveau mode pass">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </PasswordField>
+      <PasswordField fx:id="old_password" layoutX="111.0" layoutY="214.0" prefHeight="30.0" prefWidth="232.0" promptText="Ancien mode pass(Administrateur)">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="modifier" layoutX="68.0" layoutY="268.0" mnemonicParsing="false" onAction="#mdf_compte_administrateur" prefHeight="30.0" prefWidth="278.0" style="-fx-background-color: BLUE;" text="Modifier" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="68.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-user-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="68.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-password-100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="68.0" layoutY="214.0" opacity="0.27" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-password-100.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="20.0" layoutY="32.0" prefHeight="28.0" prefWidth="389.0" text="Modifier votre compte si vous êtes l'administrateur" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="156.0" layoutY="72.0" prefHeight="17.0" prefWidth="116.0" text="de l'agence!!!" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="69.0" layoutY="319.0" prefHeight="17.0" prefWidth="278.0" text="Attention: n'oubliez pas votre nouveau compte " textFill="RED" />
+      <Label layoutX="132.0" layoutY="345.0" prefHeight="17.0" prefWidth="150.0" text="cette opération est sensible" textFill="RED" />
+   </children>
+</AnchorPane>

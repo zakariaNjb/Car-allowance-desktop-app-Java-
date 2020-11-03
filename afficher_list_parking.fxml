@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="646.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AfficherListParking_Controller">
+   <children>
+      <TableView fx:id="tbv" layoutX="28.0" layoutY="77.0" prefHeight="296.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="n_parking" prefWidth="94.0" text="NR_parking" />
+          <TableColumn fx:id="rue" prefWidth="145.0" text="Rue" />
+            <TableColumn fx:id="arrond" prefWidth="142.0" text="Arrondissement" />
+            <TableColumn fx:id="capt" prefWidth="95.0" text="Capicité" />
+            <TableColumn fx:id="nbr_p_vides" prefWidth="117.0" text="Nbr_place vide" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="176.0" layoutY="26.0" prefHeight="17.0" prefWidth="298.0" text="La list des parkings de l'agence" textFill="BLUE" underline="true">
+         <font>
+            <Font name="Segoe Print" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

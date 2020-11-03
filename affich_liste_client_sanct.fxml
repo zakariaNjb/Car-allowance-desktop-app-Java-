@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AffichListeClientSanct_Controller">
+   <children>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="65.0" prefHeight="252.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="cin" prefWidth="133.0" text="CIN" />
+          <TableColumn fx:id="nom" prefWidth="124.0" text="Nom &amp; Prenom" />
+            <TableColumn fx:id="adres" prefWidth="190.0" text="Adresse" />
+            <TableColumn fx:id="gsm" prefWidth="115.0" text="Nr GSM" />
+        </columns>
+      </TableView>
+      <Label layoutX="194.0" layoutY="22.0" text="La liste des clients sanctionnés:" textFill="BLUE">
+         <font>
+            <Font name="Segoe Print" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="regler" layoutX="19.0" layoutY="326.0" mnemonicParsing="false" onAction="#regler_sanction" prefHeight="25.0" prefWidth="563.0" style="-fx-background-color: blue;" text="Afficher les réservations correspondantes à les sanctions" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="18.0" layoutY="363.0" prefHeight="17.0" prefWidth="563.0" text="Chaque jour de retard est sanctionné par une amende de 2000 DH. " textFill="RED" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.test_Controller">
+   <children>
+      <Button fx:id="btn" layoutX="125.0" layoutY="57.0" mnemonicParsing="false" onAction="#show_file" text="select a file" />
+      <Label fx:id="lb" layoutX="224.0" layoutY="54.0" prefHeight="32.0" prefWidth="232.0" text="Label" />
+      <ImageView fx:id="imgv" fitHeight="193.0" fitWidth="132.0" layoutX="113.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</Pane>

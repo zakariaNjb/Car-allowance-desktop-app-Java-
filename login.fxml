@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="350.0" prefWidth="890.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LoginController">
+   <children>
+      <ImageView fitHeight="350.0" fitWidth="455.0" layoutX="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/login.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="username" layoutX="133.0" layoutY="123.0" prefHeight="25.0" prefWidth="181.0" promptText="Username( full name )" style="-fx-border-color: black;">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="log" layoutX="88.0" layoutY="251.0" mnemonicParsing="false" onAction="#entrer" prefHeight="25.0" prefWidth="226.0" style="-fx-background-color: blue;" text="login" textFill="SNOW">
+         <font>
+            <Font name="Segoe Print Bold" size="12.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="88.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-user-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="88.0" layoutY="186.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/icons8-password-100.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="88.0" layoutY="14.0" prefHeight="47.0" prefWidth="226.0" text="Login" underline="true">
+         <font>
+            <Font name="Segoe Print Bold" size="45.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.680952380952381" endY="0.3476190476190476" startX="0.5047619047619046" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color blue="1.0" opacity="0.9739130139350891" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" blue="0.288808673620224" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <PasswordField fx:id="passwordField" layoutX="135.0" layoutY="189.0" prefHeight="25.0" prefWidth="181.0" promptText="CIN" style="-fx-border-color: black;">
+         <font>
+            <Font name="Segoe Print" size="12.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="187.0" layoutY="84.0">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
